@@ -2,8 +2,8 @@
 import { ref } from 'vue'
 import FrameHeader from '@/layouts/FrameHeader.vue'
 import { ElConfigProvider } from 'element-plus'
-let zIndex = ref(3000);
-let size = ref("default");
+const zIndex = ref(3000)
+const size = ref('default')
 </script>
 
 <template>
@@ -12,5 +12,4 @@ let size = ref("default");
   </el-config-provider>
 </template>
 
-<style lang="less">
-</style>
+<style lang="less"></style>

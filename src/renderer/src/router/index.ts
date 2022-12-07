@@ -3,7 +3,7 @@ import Layout from '@/layouts/index.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path:'/',
+    path: '/',
     component: Layout,
     children: [
       // {
@@ -14,15 +14,15 @@ const routes: Array<RouteRecordRaw> = [
     ]
   },
   {
-    path: "/moments",
-    name: "Moments",
-    component: () => import(/* webpackChunkName: "test" */ "../views/moments/index.vue"),
-  },
+    path: '/moments',
+    name: 'Moments',
+    component: () => import(/* webpackChunkName: "test" */ '../views/moments/index.vue')
+  }
 ]
 
 const router = createRouter({
-  history:createWebHistory(),
-  routes,
-});
+  history: createWebHistory(),
+  routes
+})
 
-export default router;
+export default router

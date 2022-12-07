@@ -8,11 +8,11 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   main: {
-    plugins: [vue(),externalizeDepsPlugin()],
+    plugins: [vue(), externalizeDepsPlugin()],
     build: {
       rollupOptions: {
         input: {
-          index: resolve(__dirname, 'src/main/index.ts'),
+          index: resolve(__dirname, 'src/main/index.ts')
           // moments: resolve(__dirname, 'src/renderer/src/views/moments/main.ts'),
           // moments: resolve(__dirname, 'src/main/index.ts'),
         }
@@ -23,16 +23,16 @@ export default defineConfig({
         '@': resolve('src/renderer/src'),
         '^': resolve('src/renderer/src/components')
       }
-    },
+    }
   },
   preload: {
-    plugins: [vue(),externalizeDepsPlugin()],
+    plugins: [vue(), externalizeDepsPlugin()],
     build: {
       rollupOptions: {
         input: {
           index: resolve(__dirname, 'src/preload/index.ts'),
           moments: resolve(__dirname, 'src/preload/index.ts'),
-          tray: resolve(__dirname, 'src/preload/index.ts'),
+          tray: resolve(__dirname, 'src/preload/index.ts')
         }
       }
     },
@@ -41,7 +41,7 @@ export default defineConfig({
         '@': resolve('src/renderer/src'),
         '^': resolve('src/renderer/src/components')
       }
-    },
+    }
   },
   renderer: {
     build: {
@@ -49,7 +49,7 @@ export default defineConfig({
         input: {
           index: resolve(__dirname, 'src/renderer/public/main.html'),
           moments: resolve(__dirname, 'src/renderer/public/moments.html'),
-          tray: resolve(__dirname, 'src/renderer/public/tray.html'),
+          tray: resolve(__dirname, 'src/renderer/public/tray.html')
         }
       }
     },
@@ -62,11 +62,11 @@ export default defineConfig({
     plugins: [
       vue(),
       AutoImport({
-        resolvers: [ElementPlusResolver()],
+        resolvers: [ElementPlusResolver()]
       }),
       Components({
-        resolvers: [ElementPlusResolver()],
-      }),
+        resolvers: [ElementPlusResolver()]
+      })
     ]
   }
 })

@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import FrameHeader from '@/layouts/FrameHeader.vue'
-const { ipcRenderer } = window.electron;
+const { ipcRenderer } = window.electron
 const openMoments = () => {
-  ipcRenderer.send("open-moments");
-};
+  ipcRenderer.send('open-moments')
+}
 </script>
 
 <template>
@@ -22,6 +22,4 @@ const openMoments = () => {
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

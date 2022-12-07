@@ -6,8 +6,8 @@ import 'element-plus/dist/index.css'
 import '@/assets/css/global.less'
 import '@/assets/css/elementui.less'
 
-const app = createApp(App);
+const app = createApp(App)
 
 app.use(ElementPlus)
 app.use(router)
-app.mount('#app');
+app.mount('#app')

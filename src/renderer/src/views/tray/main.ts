@@ -5,7 +5,7 @@ import 'element-plus/dist/index.css'
 import '@/assets/css/global.less'
 import '@/assets/css/elementui.less'
 
-const app = createApp(App);
+const app = createApp(App)
 
 app.use(ElementPlus)
-app.mount('#app-tray');
+app.mount('#app-tray')
